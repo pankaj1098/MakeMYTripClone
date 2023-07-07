@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import AddressBar from "./components/AddressBar";
+import Body from "./components/Body";
+import Header from "./components/Header";
+import SelectBar from "./components/SelectBar";
+
+import Shortby from "./components/Shortby";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <SelectBar />
+      <AddressBar />
+      <Shortby />
+
+      <Body />
     </div>
   );
 }
